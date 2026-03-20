@@ -15,6 +15,7 @@ from app.api.quiz import router as quiz_router
 from app.api.career import router as career_router
 from app.api.jobs import router as jobs_router
 from app.api.progress import router as progress_router
+from app.api.learn import router as learn_router
 
 app = FastAPI(
     title="VidyāMitra API",
@@ -49,6 +50,7 @@ app.include_router(resume_router)
 app.include_router(interview_router)
 app.include_router(quiz_router)
 app.include_router(career_router)
+app.include_router(learn_router)
 app.include_router(jobs_router)
 app.include_router(progress_router)
 
